@@ -17,15 +17,7 @@ box-shadow:none;
   cursor: pointer; 
 }
 
-#next1:hover {
-position:relative;
-top:3px;
 
-box-shadow:none;
--moz-box-shadow:none;
--webkit-box-shadow:none;
-  cursor: pointer; 
-}
 
 #next2:hover {
 position:relative;
@@ -113,17 +105,7 @@ box-shadow:none;
   display:inline-block;
 }
 
-#next1{
-  height: 30px;
-  width: 30px;
-  -moz-border-radius: 35px;
-  -webkit-border-radius: 35px;
-  border-radius: 35px;
-  background-color:#A8ABAD;
-  display:inline-block;
-  margin-left:123px;
-  
-}
+
 
 #next2{
   height: 30px;
