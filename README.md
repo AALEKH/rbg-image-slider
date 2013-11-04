@@ -3,7 +3,14 @@ rbg-image-slider
 
 jQuery plugin for slideshow 
 
+for debugging purpose use jquery.rbgimageslider.js
+for production purpose use jquery.rbgimageslider.min.js
+
 Include both style.css file(using link tag) and jquery.rbgimageslider.js(using script tag) in your script file.
+for ex:
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="jquery.rbgimageslider.min.js"></script>
 
 ->   The red button is for prev image ////
 ->   The blue button is for toggling fullscreen mode
