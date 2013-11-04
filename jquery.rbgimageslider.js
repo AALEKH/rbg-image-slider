@@ -15,39 +15,87 @@
     
     return this.each(function(){
     
-     
-      $('#next2').click(function(){
-      
-      $('#aalekhimage').toggle(function(){
-    
-    var adi=document.getElementById('aalekhimage');
+     document.addEventListener("keyup", function(e) {
+ if (e.keyCode == 27) {
+    if (document.cancelFullScreen) {
+      document.cancelFullScreen();
+      var adi=document.getElementById('aalekhimage');
     var adi7=document.getElementById('fullscreen');   
     var adi5=document.getElementById('prev');
-    adi5.style.top="623px";
-    adi5.style.right="920px";   
-    adi.style.height="600px";
-    adi.style.width="900px";
-    adi7.style.marginLeft="600px";   
+    adi5.style.top="320px";
+    adi5.style.right="420px";   
+    adi.style.height="300px";
+    adi.style.width="400px";
+    adi7.style.marginLeft="0px";   
     var adi3=document.getElementById('next2');
     var adi4=document.getElementById('next');  
-    adi3.style.top="623px";
-    adi3.style.right="540px";
-    adi4.style.top="623px";
+    adi3.style.top="320px";
+    adi3.style.right="270px";
+    adi4.style.top="320px";
     adi4.style.right="100px";   
     var adi6=document.getElementById('fullscreen');
-    adi6.style.marginLeft="600px";  
+    adi6.style.marginLeft="0px";  
 
-    var elem = document.getElementById('fullscreen');  
-    if(document.webkitFullscreenElement) {  
-      document.webkitCancelFullScreen(); 
-      }  
-    else {  
-            elem.webkitRequestFullScreen();  
-          } 
-        
-      },function(){
+    
+   
+     $('#aalekhimage').removeClass('cool');   
+ 
+    } else if (document.mozCancelFullScreen) {
+   document.mozCancelFullScreen();
+   var adi=document.getElementById('aalekhimage');
+    var adi7=document.getElementById('fullscreen');   
+    var adi5=document.getElementById('prev');
+    adi5.style.top="320px";
+    adi5.style.right="420px";   
+    adi.style.height="300px";
+    adi.style.width="400px";
+    adi7.style.marginLeft="0px";   
+    var adi3=document.getElementById('next2');
+    var adi4=document.getElementById('next');  
+    adi3.style.top="320px";
+    adi3.style.right="270px";
+    adi4.style.top="320px";
+    adi4.style.right="100px";   
+    var adi6=document.getElementById('fullscreen');
+    adi6.style.marginLeft="0px";  
+
+   
+   
+     $('#aalekhimage').removeClass('cool');   
+ 
+    } else if (document.webkitCancelFullScreen) {
+      document.webkitCancelFullScreen();
+      var adi=document.getElementById('aalekhimage');
+    var adi7=document.getElementById('fullscreen');   
+    var adi5=document.getElementById('prev');
+    adi5.style.top="320px";
+    adi5.style.right="420px";   
+    adi.style.height="300px";
+    adi.style.width="400px";
+    adi7.style.marginLeft="0px";   
+    var adi3=document.getElementById('next2');
+    var adi4=document.getElementById('next');  
+    adi3.style.top="320px";
+    adi3.style.right="270px";
+    adi4.style.top="320px";
+    adi4.style.right="100px";   
+    var adi6=document.getElementById('fullscreen');
+    adi6.style.marginLeft="0px";  
+
       
-    var adi=document.getElementById('aalekhimage');
+    
+     $('#aalekhimage').removeClass('cool');   
+ 
+    }
+ }
+ 
+}, false);
+      
+      
+      $('#next2').click(function(){
+      
+      if($('#aalekhimage').is('.cool')){
+        var adi=document.getElementById('aalekhimage');
     var adi7=document.getElementById('fullscreen');   
     var adi5=document.getElementById('prev');
     adi5.style.top="320px";
@@ -71,8 +119,37 @@
     else {  
             elem.webkitRequestFullScreen();  
           }
-        
-      });
+     $('#aalekhimage').removeClass('cool');   
+ 
+      }
+        else{
+          
+       var adi=document.getElementById('aalekhimage');
+       var adi5=document.getElementById('prev');
+       adi5.style.top="623px";
+       adi5.style.right="920px";   
+       adi.style.height="600px";
+       adi.style.width="900px";
+     
+       var adi3=document.getElementById('next2');
+       var adi4=document.getElementById('next');  
+       adi3.style.top="623px";
+       adi3.style.right="540px";
+       adi4.style.top="623px";
+       adi4.style.right="100px";   
+       var adi6=document.getElementById('fullscreen');
+       adi6.style.marginLeft="500px";  
+
+      var elem = document.getElementById('fullscreen');  
+      if(document.webkitFullscreenElement) {  
+       document.webkitCancelFullScreen(); 
+       }  
+     else{  
+            elem.webkitRequestFullScreen();  
+          }
+          
+     $('#aalekhimage').addClass("cool");     
+        }
       });
      
 
