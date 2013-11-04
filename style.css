@@ -1,6 +1,6 @@
 .back:hover {
 position:relative;
-top:3px;
+top:323px;
 
 box-shadow:none;
 -moz-box-shadow:none;
@@ -9,7 +9,7 @@ cursor: pointer;
 }
 #next:hover {
 position:relative;
-top:3px;
+top:323px;
 
 box-shadow:none;
 -moz-box-shadow:none;
@@ -19,9 +19,9 @@ box-shadow:none;
 
 
 
-#next2:hover {
+#fscrn:hover {
 position:relative;
-top:3px;
+top:323px;
 
 box-shadow:none;
 -moz-box-shadow:none;
@@ -41,9 +41,9 @@ box-shadow:none;
 .html5-fullscreen-api img {  
     max-width: 100%;  
     border: 10px solid #fff;  
-    box-shadow: 0px 0px 50px #ccc;  
+     
 }  
-.html5-fullscreen-api #next2 {  
+.html5-fullscreen-api #fscrn {  
     z-index: 100;  
     
     width: 32px;  
@@ -54,15 +54,7 @@ box-shadow:none;
     cursor: pointer;  
 }  
 
-#aalekh:-webkit-full-screen{
-    width: 500px;  
-    height:700px;
-}
-#aalekh:-moz-full-screen}{
-    width: 800px;  
-    height:700px;
-}
- 
+
 
 
 #fullscreen:-webkit-full-screen {  
@@ -83,17 +75,13 @@ box-shadow:none;
   margin-left:0px
 }
 
-#aalekhimage{
+#mainimage{
     float:left;
     height:300px;
     width:400px;
 }
 
-#aalekh2{
-  height:30px;
-  width:400px;
-  border-radius:35px;
-}
+
 
 .back{
   height: 30px;
@@ -103,19 +91,25 @@ box-shadow:none;
   border-radius: 35px;
   background-color:#FA2323;
   display:inline-block;
+  position:relative;
+  top:320px;
+  right:420px;
 }
 
 
 
-#next2{
+#fscrn{
   height: 30px;
   width: 30px;
   -moz-border-radius: 35px;
   -webkit-border-radius: 35px;
   border-radius: 35px;
-  background-color:#1A1918;
+  background-color:#16F5A3;
   display:inline-block;
-  margin-left:168px;
+  
+  position:relative;
+  top:320px;
+  right:270px;
 }
 
 #next{
@@ -124,11 +118,18 @@ box-shadow:none;
   -moz-border-radius: 35px;
   -webkit-border-radius: 35px;
   border-radius: 35px;
-  background-color:#48F7AE;
+  background-color:#16F54E;
   display:inline-block;
-  margin-left:131px;
+  position:relative;
+  top:320px;
+  right:100px;
 }
 :-webkit-full-screen #aalekh {
 width: 100%;
 height: 100%;
+}
+
+.cool{
+  /*foo class*/
+  
 }
