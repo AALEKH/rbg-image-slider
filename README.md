@@ -15,16 +15,9 @@ you have the advantage to add as many src as you wish and enjoy the slide show e
 for ex:$('#mainimage').rbgimageslider(""src1","src2",.....");
 
 
-to add the plugin copy and paste the following code :
-<div id="fullscreen" class="html5-fullscreen-api"  > 
-  <img id="mainimage" src="">
- 
-    <div class="back" id="prev"></div> 
-   
-    <div id="fscrn" > </div>
-    <div id="next" "> </div>
-   
-  </div>
+to add the plugin copy and paste the following code given in below link :
+
+http://jsfiddle.net/aalekh/Khnm4/
 
 for positioning the element it is advisable to add additional tag around div(id=fullscreen) 
 
