@@ -1,3 +1,16 @@
+/*
+ * jQuery RBG Image Slider  v1.0
+ *
+ * @mailto:aalekh.nigam@gmail.com
+ *
+ * Copyright 2013, 	Aalekh Nigam
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * NOVEMBER 2013
+ */
+
+
 (function($){
   
   $.fn.rbgimageslider=function(){
@@ -6,7 +19,7 @@
   var counter=0; 
   var para=new Array();
   var len=arguments.length;
-  var a=document.getElementById('aalekhimage');  
+  var a=document.getElementById('mainimage');  
   for(var i=0;i <= len-1;i++)
     {
    para[i]=arguments[i]; 
@@ -16,75 +29,69 @@
     return this.each(function(){
     
      document.addEventListener("keyup", function(e) {
- if (e.keyCode == 27) {
+    var image=document.getElementById('mainimage');
+    var peh=document.getElementById('prev');
+    var fscrnvar=document.getElementById('fscrn');
+    var nextvar=document.getElementById('next');    
+    var fullscreenvar=document.getElementById('fullscreen');
+       
+       if (e.keyCode == 27) {
     if (document.cancelFullScreen) {
-      document.cancelFullScreen();
-      var adi=document.getElementById('aalekhimage');
-    var adi7=document.getElementById('fullscreen');   
-    var adi5=document.getElementById('prev');
-    adi5.style.top="320px";
-    adi5.style.right="420px";   
-    adi.style.height="300px";
-    adi.style.width="400px";
-    adi7.style.marginLeft="0px";   
-    var adi3=document.getElementById('next2');
-    var adi4=document.getElementById('next');  
-    adi3.style.top="320px";
-    adi3.style.right="270px";
-    adi4.style.top="320px";
-    adi4.style.right="100px";   
-    var adi6=document.getElementById('fullscreen');
-    adi6.style.marginLeft="0px";  
+    document.cancelFullScreen();
+   
+    peh.style.top="320px";
+    peh.style.right="420px";   
+    image.style.height="300px";
+    image.style.width="400px";
+       
+     
+    fscrnvar.style.top="320px";
+    fscrnvar.style.right="270px";
+    nextvar.style.top="320px";
+    nextvar.style.right="100px";   
+    
+    fullscreenvar.style.marginLeft="0px";  
 
     
    
-     $('#aalekhimage').removeClass('cool');   
+     $('#mainimage').removeClass('cool');   
  
     } else if (document.mozCancelFullScreen) {
    document.mozCancelFullScreen();
-   var adi=document.getElementById('aalekhimage');
-    var adi7=document.getElementById('fullscreen');   
-    var adi5=document.getElementById('prev');
-    adi5.style.top="320px";
-    adi5.style.right="420px";   
-    adi.style.height="300px";
-    adi.style.width="400px";
-    adi7.style.marginLeft="0px";   
-    var adi3=document.getElementById('next2');
-    var adi4=document.getElementById('next');  
-    adi3.style.top="320px";
-    adi3.style.right="270px";
-    adi4.style.top="320px";
-    adi4.style.right="100px";   
-    var adi6=document.getElementById('fullscreen');
-    adi6.style.marginLeft="0px";  
+   
+    peh.style.top="320px";
+    peh.style.right="420px";   
+    image.style.height="300px";
+    image.style.width="400px";
+    
+    fscrnvar.style.top="320px";
+    fscrnvar.style.right="270px";
+    nextvar.style.top="320px";
+    nextvar.style.right="100px";   
+   
+    fullscreenvar.style.marginLeft="0px";  
 
    
    
-     $('#aalekhimage').removeClass('cool');   
+     $('#mainimage').removeClass('cool');   
  
     } else if (document.webkitCancelFullScreen) {
       document.webkitCancelFullScreen();
-      var adi=document.getElementById('aalekhimage');
-    var adi7=document.getElementById('fullscreen');   
-    var adi5=document.getElementById('prev');
-    adi5.style.top="320px";
-    adi5.style.right="420px";   
-    adi.style.height="300px";
-    adi.style.width="400px";
-    adi7.style.marginLeft="0px";   
-    var adi3=document.getElementById('next2');
-    var adi4=document.getElementById('next');  
-    adi3.style.top="320px";
-    adi3.style.right="270px";
-    adi4.style.top="320px";
-    adi4.style.right="100px";   
-    var adi6=document.getElementById('fullscreen');
-    adi6.style.marginLeft="0px";  
+     
+    peh.style.top="320px";
+    peh.style.right="420px";   
+    image.style.height="300px";
+    image.style.width="400px";
+   
+    fscrnvar.style.top="320px";
+    fscrnvar.style.right="270px";
+    nextvar.style.top="320px";
+    nextvar.style.right="100px";   
+    fullscreenvar.style.marginLeft="0px";  
 
       
     
-     $('#aalekhimage').removeClass('cool');   
+     $('#mainimage').removeClass('cool');   
  
     }
  }
@@ -92,25 +99,25 @@
 }, false);
       
       
-      $('#next2').click(function(){
-      
-      if($('#aalekhimage').is('.cool')){
-        var adi=document.getElementById('aalekhimage');
-    var adi7=document.getElementById('fullscreen');   
-    var adi5=document.getElementById('prev');
-    adi5.style.top="320px";
-    adi5.style.right="420px";   
-    adi.style.height="300px";
-    adi.style.width="400px";
-    adi7.style.marginLeft="0px";   
-    var adi3=document.getElementById('next2');
-    var adi4=document.getElementById('next');  
-    adi3.style.top="320px";
-    adi3.style.right="270px";
-    adi4.style.top="320px";
-    adi4.style.right="100px";   
-    var adi6=document.getElementById('fullscreen');
-    adi6.style.marginLeft="0px";  
+      $('#fscrn').click(function(){
+      var image=document.getElementById('mainimage');  
+    var peh=document.getElementById('prev');  
+    var fscrnvar=document.getElementById('fscrn');
+    var nextvar=document.getElementById('next');   
+    var fullscreenvar=document.getElementById('fullscreen');
+        if($('#mainimage').is('.cool')){
+        
+    peh.style.top="320px";
+    peh.style.right="420px";   
+    image.style.height="300px";
+    image.style.width="400px";
+   
+    fscrnvar.style.top="320px";
+    fscrnvar.style.right="270px";
+    nextvar.style.top="320px";
+    nextvar.style.right="100px";   
+   
+    fullscreenvar.style.marginLeft="0px";  
 
     var elem = document.getElementById('fullscreen');  
     if(document.webkitFullscreenElement) {  
@@ -119,26 +126,23 @@
     else {  
             elem.webkitRequestFullScreen();  
           }
-     $('#aalekhimage').removeClass('cool');   
+     $('#mainimage').removeClass('cool');   
  
       }
         else{
           
-       var adi=document.getElementById('aalekhimage');
-       var adi5=document.getElementById('prev');
-       adi5.style.top="623px";
-       adi5.style.right="920px";   
-       adi.style.height="600px";
-       adi.style.width="900px";
+       peh.style.top="623px";
+       peh.style.right="920px";   
+       image.style.height="600px";
+       image.style.width="900px";
      
-       var adi3=document.getElementById('next2');
-       var adi4=document.getElementById('next');  
-       adi3.style.top="623px";
-       adi3.style.right="540px";
-       adi4.style.top="623px";
-       adi4.style.right="100px";   
-       var adi6=document.getElementById('fullscreen');
-       adi6.style.marginLeft="500px";  
+        
+       fscrnvar.style.top="623px";
+       fscrnvar.style.right="540px";
+       nextvar.style.top="623px";
+       nextvar.style.right="100px";   
+      
+       fullscreenvar.style.marginLeft="500px";  
 
       var elem = document.getElementById('fullscreen');  
       if(document.webkitFullscreenElement) {  
@@ -148,21 +152,20 @@
             elem.webkitRequestFullScreen();  
           }
           
-     $('#aalekhimage').addClass("cool");     
+     $('#mainimage').addClass("cool");     
         }
       });
      
 
      
       $('.back').click(function() {
-       $('#aalekhimage').fadeOut(200);
+       $('#mainimage').fadeOut(200);
        });
       
       $('.back').click(function(){
        
         if(counter >= len){
          counter=0;
-         
          a.src=para[counter]; 
          counter++; 
         }  
@@ -177,18 +180,17 @@
       });
 
   $('.back').click(function() {
-$('#aalekhimage').fadeIn(200);
+$('#mainimage').fadeIn(200);
 });
       
       $('#next').click(function() {
-        $('#aalekhimage').fadeOut('fast');
+        $('#mainimage').fadeOut('fast');
         });
       $('#next').click(function(){
         
         
         if(counter < 0){
          counter=len-1; 
-         
          a.src=para[counter];
          counter--; 
         }
@@ -200,7 +202,7 @@ $('#aalekhimage').fadeIn(200);
        
       });
        $('#next').click(function() {
-        $('#aalekhimage').fadeIn('fast');
+        $('#mainimage').fadeIn('fast');
 });
        
       
@@ -214,4 +216,4 @@ $('#aalekhimage').fadeIn(200);
 
 }(jQuery));
 
-$('#aalekhimage').rbgimageslider("http://t0.gstatic.com/images?q=tbn:ANd9GcS8qATHbHl-sMtFKBtXk9Aahz4JA46jKowiy2YkcNvR92xGA1bNug","http://www.wired.com/opinion/wp-content/uploads/2013/11/u3c0282.jpg");
+$('#mainimage').rbgimageslider(/*Add links of images here ,inside double quotes*/);
