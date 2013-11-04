@@ -8,10 +8,12 @@ for production purpose use jquery.rbgimageslider.min.js
 
 Include both style.css file(using link tag) and jquery.rbgimageslider.js(using script tag) in your script file.
 for ex:
+
+```html 
 <link rel="stylesheet" type="text/css" href="style.css">
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="jquery.rbgimageslider.min.js"></script>
-
+```
 ->   The red button is for prev image ////
 ->   The blue button is for toggling fullscreen mode
 ->   The Green button is for going to the next image  
@@ -22,10 +24,19 @@ you have the advantage to add as many src as you wish and enjoy the slide show e
 for ex:$('#mainimage').rbgimageslider(""src1","src2",.....");
 
 
-to add the plugin copy and paste the following code given in below link :
+to add the plugin copy and paste the following code :
 
-http://jsfiddle.net/aalekh/Khnm4/
-
+```html
+<div id="fullscreen" class="html5-fullscreen-api"  > 
+  <img id="mainimage" src="">
+ 
+    <div class="back" id="prev"></div> 
+   
+    <div id="fscrn" > </div>
+    <div id="next" "> </div>
+   
+  </div>
+```
 for positioning the element it is advisable to add additional tag around div(id=fullscreen) 
 
 for ex:
